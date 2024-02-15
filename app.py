@@ -121,7 +121,7 @@ def ObtenerEmojis(Mensaje):
 total_mensajes = df.shape[0]
 
 # Obtener la cantidad de archivos multimedia enviados
-multimedia_mensajes = df[df['Mensaje'] == '<Media omitted>'].shape[0]
+multimedia_mensajes = df[df['Mensaje'] == '<Multimedia omitido>'].shape[0]
 
 # Obtener la cantidad de emojis enviados
 df['Emojis'] = df['Mensaje'].apply(ObtenerEmojis) # Se agrega columna 'Emojis'
